@@ -45,7 +45,6 @@
 		C0A8DF2B182FF1C4004D28A3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A8DF2A182FF1C4004D28A3 /* CFNetwork.framework */; };
 		C0ABF5D21835B05100A0E51F /* OCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ABF5D01835B05100A0E51F /* OCSettingsViewController.m */; };
 		C0ABF5D31835B05100A0E51F /* OCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0ABF5D11835B05100A0E51F /* OCSettingsViewController.xib */; };
-		C0ABF5D51835BD4000A0E51F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ABF5D41835BD4000A0E51F /* StoreKit.framework */; };
 		C0CCB4AA17B86EDB007C334B /* logo-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C0CCB4A917B86EDB007C334B /* logo-01.png */; };
 		C0EE708317B8142A00C97F0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EE708217B8142A00C97F0B /* UIKit.framework */; };
 		C0EE708517B8142A00C97F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EE708417B8142A00C97F0B /* Foundation.framework */; };
@@ -128,7 +127,6 @@
 		C0ABF5CF1835B05100A0E51F /* OCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCSettingsViewController.h; sourceTree = "<group>"; };
 		C0ABF5D01835B05100A0E51F /* OCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCSettingsViewController.m; sourceTree = "<group>"; };
 		C0ABF5D11835B05100A0E51F /* OCSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCSettingsViewController.xib; sourceTree = "<group>"; };
-		C0ABF5D41835BD4000A0E51F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C0CCB4A917B86EDB007C334B /* logo-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-01.png"; sourceTree = "<group>"; };
 		C0EE707F17B8142A00C97F0B /* OnionStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnionStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EE708217B8142A00C97F0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -172,7 +170,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ABF5D51835BD4000A0E51F /* StoreKit.framework in Frameworks */,
 				C0A8DF2B182FF1C4004D28A3 /* CFNetwork.framework in Frameworks */,
 				C0A8DF29182FF1A6004D28A3 /* libz.1.1.3.dylib in Frameworks */,
 				C0A8DF27182FF184004D28A3 /* CoreLocation.framework in Frameworks */,
@@ -337,7 +334,6 @@
 				C02CBD21183B9F1C003C0C94 /* XCTest.framework */,
 				C0EE70C817B8184B00C97F0B /* QuartzCore.framework */,
 				C0EE70B217B8146A00C97F0B /* Security.framework */,
-				C0ABF5D41835BD4000A0E51F /* StoreKit.framework */,
 				C0A8DF2A182FF1C4004D28A3 /* CFNetwork.framework */,
 				C0A8DF28182FF1A6004D28A3 /* libz.1.1.3.dylib */,
 				C0A8DF26182FF183004D28A3 /* CoreLocation.framework */,
@@ -489,7 +485,12 @@
 						TestTargetID = C0EE707E17B8142A00C97F0B;
 					};
 					C0EE707E17B8142A00C97F0B = {
-						DevelopmentTeam = RMTZ2ZJ8M5;
+						DevelopmentTeam = XYL49Z8YJS;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
